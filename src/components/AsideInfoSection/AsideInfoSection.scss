@@ -1,0 +1,111 @@
+.asideSection {
+    width: 25%;
+    background-color: #727AD6;
+    padding: 50px 3%;
+    &--search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            border: none;
+            margin-right: 10px;
+            width: 90%;
+            height: 30px;
+            border-radius: 15px;
+            padding-left: 20px;
+            color: #727AD6;
+            &::placeholder {
+                color: #727AD6;
+            }
+        }
+        div {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            button {
+                color: #727AD6;
+                border: none;
+                padding: 10px;
+                border-radius: 20px;
+                background-color: #E0E1FF;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                &:hover {
+                    background-color: #B3B6FF; 
+                }
+            }
+        }
+        &--error {
+            color: #8B0000;
+            font-size: 14px;
+        }
+    }
+    &--img {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 70%;
+        }
+    }
+    &--info {
+        &--degree {
+            font-size: 90px;
+            color: white;
+        }
+        &--day {
+            margin-top: 25px;
+            color: white;
+            font-size: 20px;
+            span {
+                color: #E0E1FF;
+            }
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #E0E1FF;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &--perceived {
+            font-size: 17px;
+            color: white;
+            svg {
+                color: #E0E1FF;
+                margin-right: 5px;
+            }
+        }
+    }
+    &--city {
+        background-color: #E0E1FF;
+        height: 150px;
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        overflow: hidden;
+        &--overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            top: 0;
+            border-radius: 25px;
+        }
+        img {
+            object-fit: cover;
+            height: 100%;
+             width: 100%;
+             max-width: 100%;
+            max-height: 100%;
+        }
+        p {
+            position: absolute;
+            font-size: 35px;
+            color: #727AD6;
+            text-align: center;
+        }
+    }
+}
