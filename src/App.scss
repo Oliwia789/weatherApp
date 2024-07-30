@@ -1,12 +1,22 @@
 .App {
   display: flex;
   min-height: 100vh;
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .mainSection {
   width: 70%;
   background-color: #E0E1FF;
   padding: 50px 3%;
+  @media (max-width: 1024px) {
+    width: 60%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 50px 5%;
+  }
 }
 
 header {
@@ -17,6 +27,7 @@ header {
   p {
     font-weight: 500;
     color: #3437C8;
+    text-transform: capitalize;
   }
   button:first-child {
     margin-right: 15px;
@@ -53,5 +64,12 @@ h1 {
   grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
   grid-template-rows: repeat(2, auto); /* 2 lignes */
   gap: 70px; /* espace entre les cartes */
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: auto;
+  }
   
 }

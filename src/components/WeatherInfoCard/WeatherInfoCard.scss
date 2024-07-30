@@ -6,6 +6,10 @@
     border-radius: 20px;
     max-height: 250px;
     position: relative;
+    @media (max-width: 768px) {
+        height: 200px;
+        max-height: 200px;
+    }
 
     h2 {
         font-size: 20px;
@@ -19,11 +23,17 @@
         align-items: center;
         font-size: 35px;
         text-align: center;
+        @media (max-width: 768px) {
+            height: 70%;
+        }
     }
 
     .singleElement {
         height: 90%;
-        font-size: 50px;
+        font-size: 45px;
+        @media (max-width: 1024px) {
+            font-size: 40px;
+        }
     }
 
     .jauge {
