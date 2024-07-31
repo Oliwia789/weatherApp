@@ -2,7 +2,7 @@
 
 Weather App est une application React permettant de consulter les conditions météorologiques actuelles et prévisionnelles pour n'importe quelle ville. L'application utilise des services de géolocalisation pour déterminer automatiquement la météo de l'emplacement actuel de l'utilisateur et permet également des recherches manuelles par ville ou code postal.
 
-Vous pouvez accéder à l'application déployée en ligne à l'adresse suivante : Weather App
+Vous pouvez accéder à l'application déployée en ligne à l'adresse suivante : [Weather App]([https://www.google.com](https://oliwia789.github.io/weatherApp/))
 
 ## Fonctionnalités
 
