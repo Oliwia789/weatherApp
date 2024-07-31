@@ -3,14 +3,15 @@ import axios from 'axios';
 const API_KEY = 'bfb2520eea1316d617e6363687d72d8f';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
-export const fetchWeatherData = async (lat, lon) => {
+export const fetchWeatherData = async (lat, lon, unit = "metric") => {
   try {
     const response = await axios.get(BASE_URL, {
       params: {
         lat: lat,
         lon: lon,
         appid: API_KEY,
-        units: "metric"
+        units: unit,
+        lang: "fr"
       },
     });
     return response.data;

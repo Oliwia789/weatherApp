@@ -86,12 +86,18 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
-        &--perceived {
+        &--weather {
             font-size: 17px;
             color: white;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            div {
+                width: 30px;
+            }
             svg {
                 color: #E0E1FF;
-                margin-right: 5px;
             }
         }
     }
