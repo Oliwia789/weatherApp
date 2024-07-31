@@ -11,7 +11,7 @@ export const formatDateTime = () => {
     };
   };
 
-  export const formatSunTimes = (sunrise, sunset) => {
+export const formatSunTimes = (sunrise, sunset) => {
     const formatOptions = { hour: '2-digit', minute: '2-digit', hour12: false };
   
     const sunriseTime = new Date(sunrise * 1000).toLocaleTimeString('fr-FR', formatOptions);
@@ -21,4 +21,4 @@ export const formatDateTime = () => {
       sunriseTime,
       sunsetTime
     };
-  };
+};

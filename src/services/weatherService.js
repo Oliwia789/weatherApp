@@ -1,6 +1,7 @@
 import axios from 'axios';
+import env from "react-dotenv";
 
-const API_KEY = 'bfb2520eea1316d617e6363687d72d8f';
+const API_KEY = env.API_KEY;
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 export const fetchWeatherData = async (lat, lon, unit = "metric") => {

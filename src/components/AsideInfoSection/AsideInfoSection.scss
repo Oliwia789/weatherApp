@@ -1,11 +1,13 @@
+@import "../../styles/variables.scss";
+
 .asideSection {
     width: 30%;
-    background-color: #727AD6;
+    background-color: $primary-color;
     padding: 50px 3%;
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-lg) {
         width: 40%;
     }
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-md) {
         width: 100%;
         padding: 50px 5%;
       }
@@ -13,7 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         input {
             border: none;
             margin-right: 10px;
@@ -21,9 +23,9 @@
             height: 30px;
             border-radius: 15px;
             padding-left: 20px;
-            color: #727AD6;
+            color: $primary-color;
             &::placeholder {
-                color: #727AD6;
+                color: $primary-color;
             }
         }
         div {
@@ -34,23 +36,23 @@
                 margin-right: 10px;
             }
             button {
-                color: #727AD6;
+                color: $primary-color;
                 border: none;
                 padding: 10px;
                 border-radius: 20px;
-                background-color: #E0E1FF;
+                background-color: $secondary-color;
                 cursor: pointer;
                 transition: background-color 0.3s;
                 &:hover {
-                    background-color: #B3B6FF; 
+                    background-color: $hover-color; 
                 }
-                @media (max-width: 1024px) {
+                @media (max-width: $breakpoint-lg) {
                     padding: 8px;
                 }
             }
         }
         &--error {
-            color: #8B0000;
+            color: $error;
             font-size: 14px;
             margin-left: 10px;
         }
@@ -65,30 +67,30 @@
     &--info {
         &--degree {
             font-size: 90px;
-            color: white;
-            @media (max-width: 1024px) {
+            color: $white;
+            @media (max-width: $breakpoint-lg) {
                 font-size: 80px;
             }
         }
         &--day {
             margin-top: 25px;
-            color: white;
+            color: $white;
             font-size: 20px;
             text-transform: capitalize;
             span {
-                color: #E0E1FF;
+                color: $secondary-color;
             }
         }
         hr {
             border: none;
             height: 1px;
-            background-color: #E0E1FF;
+            background-color: $secondary-color;
             margin-top: 20px;
             margin-bottom: 20px;
         }
         &--weather {
             font-size: 17px;
-            color: white;
+            color: $white;
             display: flex;
             align-items: center;
             margin-bottom: 20px;
@@ -97,12 +99,12 @@
                 width: 30px;
             }
             svg {
-                color: #E0E1FF;
+                color: $secondary-color;
             }
         }
     }
     &--city {
-        background-color: #E0E1FF;
+        background-color: $secondary-color;
         height: 150px;
         margin-top: 50px;
         position: relative;
@@ -129,7 +131,7 @@
         p {
             position: absolute;
             font-size: 28px;
-            color: #727AD6;
+            color: $primary-color;
             text-align: center;
         }
     }

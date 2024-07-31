@@ -1,12 +1,14 @@
+@import "../../styles/variables.scss";
+
 .infoCard {
-    background-color: #727AD6;
-    color: white;
+    background-color: $primary-color;
+    color: $white;
     height: 250px;
     padding: 25px;
     border-radius: 20px;
     max-height: 250px;
     position: relative;
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-md) {
         height: 200px;
         max-height: 200px;
     }
@@ -23,7 +25,7 @@
         align-items: center;
         font-size: 35px;
         text-align: center;
-        @media (max-width: 768px) {
+        @media (max-width: $breakpoint-md) {
             height: 70%;
         }
     }
@@ -31,17 +33,17 @@
     .singleElement {
         height: 90%;
         font-size: 45px;
-        @media (max-width: 1024px) {
+        @media (max-width: $breakpoint-lg) {
             font-size: 40px;
         }
     }
 
-    .jauge {
+    .metric {
         right: 15px;
         position: absolute;
         width: 25px;
         height: 50%;
-        background: white;
+        background: $white;
         top: 70px;
         border-radius: 20px;
         span {
@@ -49,7 +51,7 @@
             bottom: 5px;
             height: 20px;
             width: 20px;
-            background: #B3B6FF;
+            background: $hover-color;
             position: absolute;
             border-radius: 20px;
             margin-bottom: 5px;
@@ -60,9 +62,9 @@
         display: flex;
         align-items: center;
         svg {
-            background: white;
+            background: $white;
             padding: 7px;
-            color: #FDB848;
+            color: $accent-yellow;
             border-radius: 20px;
             margin-right: 10px;
         }
@@ -79,9 +81,9 @@
         }
         svg {
             position: relative;
-            background: linear-gradient(2deg, yellow, #FDB848);
+            background: linear-gradient(2deg, yellow, $accent-yellow);
             padding: 10px 12px;
-            color: white;
+            color: $white;
             border-radius: 20px;
             margin-right: 10px;
             z-index: 1;

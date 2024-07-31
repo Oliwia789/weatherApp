@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+.weatherContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 70px; 
+    @media (max-width: $breakpoint-lg) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+    @media (max-width: $breakpoint-md) {
+      grid-template-columns: auto;
+    }
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 600;
+  color: $primary-color;
+}
